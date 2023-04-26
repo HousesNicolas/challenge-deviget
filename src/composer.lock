@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c25e6ff1c2be62358a889de42358e89",
+    "content-hash": "8be7eca8a7c6508abd3b133989602c62",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -18401,6 +18401,95 @@
             "time": "2023-02-08T18:07:39+00:00"
         },
         {
+            "name": "magepow/core",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/magepow/magento-2-core.git",
+                "reference": "9447477136cf115c577be81f0e08d83444d28d10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/magepow/magento-2-core/zipball/9447477136cf115c577be81f0e08d83444d28d10",
+                "reference": "9447477136cf115c577be81f0e08d83444d28d10",
+                "shasum": ""
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magepow\\Core\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Magepow",
+                    "email": "support@magepow.com",
+                    "homepage": "https://magepow.com",
+                    "role": "Technical Support"
+                }
+            ],
+            "description": "Magepow Core for Magento 2.",
+            "support": {
+                "issues": "https://github.com/magepow/magento-2-core/issues",
+                "source": "https://github.com/magepow/magento-2-core/tree/1.0.6"
+            },
+            "time": "2022-11-10T02:06:08+00:00"
+        },
+        {
+            "name": "magiccart/magicslider",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/magepow/magento-2-banner-slider.git",
+                "reference": "1e19b521b1d3a205f695fe48e9b5bdbd047fdf1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/magepow/magento-2-banner-slider/zipball/1e19b521b1d3a205f695fe48e9b5bdbd047fdf1a",
+                "reference": "1e19b521b1d3a205f695fe48e9b5bdbd047fdf1a",
+                "shasum": ""
+            },
+            "require": {
+                "magepow/core": ">=1.0.3"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magiccart\\Magicslider\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Alothemes",
+                    "email": "support@magepow.com",
+                    "homepage": "https://magepow.com",
+                    "role": "Technical Support"
+                }
+            ],
+            "description": "Banner slider flexibly to any page on live store.",
+            "support": {
+                "issues": "https://github.com/magepow/magento-2-banner-slider/issues",
+                "source": "https://github.com/magepow/magento-2-banner-slider/tree/1.0.5"
+            },
+            "time": "2022-11-10T08:47:39+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "2.9.1",
             "source": {
@@ -27622,5 +27711,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }
