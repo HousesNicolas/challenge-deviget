@@ -1,0 +1,69 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  General Styles Custom Theme ww_default 
+//  _____________________________________________
+
+//
+//  Color variables
+//  _____________________________________________
+
+@color-green-water: #159957;
+@color-blue-water:  #155799;
+@color-gold: #ffd700;
+@copyright__background-color: @color-gray-middle4;
+
+//
+//  General Pages
+//  _____________________________________________
+
+.page-header {
+    color: @color-white;
+    text-align: center;
+    background-color: @color-green-water;
+    background-image: linear-gradient(120deg, @color-blue-water, @color-green-water);
+}
+
+// Nav Bar
+//  _____________________________________________
+
+@media only screen and (min-width: @screen__s) {
+    nav {
+        ul {
+            list-style-type: none;
+            display: flex;
+            li {
+                flex: 1 1 auto;
+                text-align: center;
+            }
+        }
+        a {
+            font-size: 20px;
+            border-bottom: 2px solid transparent;
+            &:hover {
+                border-bottom: 2px solid @color-gold;
+            }
+        }
+        &.navigation {
+            .level0 {
+                &.parent {
+                    > .level-top {
+                        padding-right: 30px;
+                        > .ui-menu-icon {
+                            .lib-icon-font(
+                                @icon-down,
+                                @_icon-font-size: 30px,
+                                @_icon-font-line-height: 20px,
+                                @_icon-font-text-hide: true,
+                                @_icon-font-position: after
+                            );
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
