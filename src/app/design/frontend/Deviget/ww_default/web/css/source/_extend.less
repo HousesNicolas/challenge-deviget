@@ -1,0 +1,89 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+@import '_mixins.less';
+@import '_theme.less';
+//
+//  Presentation Page
+//  _____________________________________________
+
+.cms-magento-professional-developer {
+    h1 {
+        display: block;
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+    h2 {
+        border-bottom: 2px solid transparent;
+        font-weight: bold;
+        &::first-letter {
+            font-size: 40px;
+            font-weight: bold;
+            font-family: Harrington, Zapfino;
+        }
+    }
+    h3{
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;  
+    }
+    .project-name {
+        font-size: 3.25rem;
+        margin-top: 0;
+        margin-bottom: 0.1rem;
+        text-shadow: 0px 0px 5px @color-white;
+    }
+    .project-tagline{
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        font-weight: normal;
+        opacity: 0.7;
+    }
+    .main-content {
+        h1,h2,h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: normal;
+            color: @color-green-water;
+        }
+    }
+    .mage-dev-content {
+        margin: 0 auto;
+        max-width: 1270px;
+        padding-left: 60px;
+        padding-right: 30px;
+    }
+    span{
+        font-weight: bold;
+    }
+    .social {
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+@media only screen and (min-width: @screen__s) {
+    .deviget-press {
+        .photo {
+            text-align: center;
+            img{
+                width: 150px;
+                height: 150px;
+                border: 3px solid @color-white;
+                box-shadow: 0px 0px 10px #777;
+                margin-top: 40px;
+                .lib-border-radius (@radius: 50%);
+            }
+        }
+    }
+}
